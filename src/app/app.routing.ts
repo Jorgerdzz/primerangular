@@ -5,10 +5,12 @@ import { HooksAngular } from "../components/hooksangular/hooksangular.component"
 import { PrimerComponent } from "../components/primercomponent/primer.component";
 import { SumarNumeros } from "../components/sumarnumeros/sumarnumeros.component";
 import { TablamultiplicarComponent } from "../components/tablamultiplicar.component/tablamultiplicar.component";
+import { CollatzComponent } from "../components/collatz.component/collatz.component";
 
 import { Routes, RouterModule } from "@angular/router";
 
 import { ModuleWithProviders } from "@angular/core";
+
 
 const appRoutes: Routes = [
     {path: "", component:PrimerComponent},
@@ -17,7 +19,8 @@ const appRoutes: Routes = [
     {path: "deportesv2", component:Deportesv2},
     {path: "formbinding", component:FormsBinding},
     {path: "sumarnumeros", component:SumarNumeros},
-    {path: "tablamultiplicar", component:TablamultiplicarComponent}
+    {path: "tablamultiplicar", component:TablamultiplicarComponent},
+    {path: "collatz", component:CollatzComponent}
 ]
 
 export const appRoutingProvider: any[] = []

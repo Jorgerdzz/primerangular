@@ -15,6 +15,7 @@ import { TestComponent } from '../components/test.component/test.component';
 import { TablamultiplicarComponent } from '../components/tablamultiplicar.component/tablamultiplicar.component';
 import { MenuComponent } from '../components/menu.component/menu.component';
 import { appRoutingProvider, Routing } from './app.routing';
+import { CollatzComponent } from '../components/collatz.component/collatz.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { appRoutingProvider, Routing } from './app.routing';
     TestComponent,
     TablamultiplicarComponent,
     MenuComponent,
+    CollatzComponent
   ],
   imports: [
     BrowserModule,

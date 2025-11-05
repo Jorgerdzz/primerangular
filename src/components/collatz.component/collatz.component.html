@@ -1,0 +1,22 @@
+<div>
+    <h1>Conjetura Collatz</h1>
+    <form #collatzForm="ngForm" (ngSubmit)="conjeturaCollatz()">
+        <label>Introduzca número</label>
+        <input type="number" name="cajanum" #cajanum="ngModel" [(ngModel)]="numero"/>
+        <button>Calcular collatz</button>
+    </form>
+    <ul>
+        @for(num of conjetura; track num){
+            @if(num % 2 == 0){
+                <li class="par">
+                    {{num}}
+                </li>
+            }@else{
+                <li class="impar">
+                    {{num}}
+                </li>
+            }
+            
+        }
+    </ul>
+</div>
