@@ -9,15 +9,14 @@ import { ViewChild, ElementRef } from "@angular/core";
 
 export class SumarNumeros{
 
-    @ViewChild("cajanum1") cajaNum1Ref: ElementRef;
-    @ViewChild("cajanum2") cajaNum2Ref: ElementRef
+    @ViewChild("cajanum1") cajaNum1Ref!: ElementRef;
+    @ViewChild("cajanum2") cajaNum2Ref!: ElementRef
 
     public suma: number;
 
     constructor(){
         this.suma = 0
-        this.cajaNum1Ref = new ElementRef(0);
-        this.cajaNum2Ref = new ElementRef(0);
+
     }
 
     sumarNumeros(): void{
