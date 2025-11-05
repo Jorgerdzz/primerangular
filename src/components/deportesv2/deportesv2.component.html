@@ -1,0 +1,15 @@
+<div>
+    <h1>Deportes v2</h1>
+    <h2>Número de deportes: {{deportes.length}}</h2>
+    <ul>
+        @for(deporte of deportes; track deporte; let i = $index){
+            @if(deporte.length>5){
+                <li class="mayor">Index: {{i}}, Deporte: {{deporte}}</li>
+            }@else{
+                <li class="menor">Index: {{i}}, Deporte: {{deporte}}</li>
+            }
+        }@empty{
+            <li>Sin elementos</li>
+        }
+    </ul>
+</div>
