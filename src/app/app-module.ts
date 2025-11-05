@@ -12,6 +12,7 @@ import { SumarNumeros } from '../components/sumarnumeros/sumarnumeros.component'
 import { Prueba } from './components/prueba/prueba';
 import { Prueba2Component } from './components/prueba2.component/prueba2.component';
 import { TestComponent } from '../components/test.component/test.component';
+import { TablamultiplicarComponent } from '../components/tablamultiplicar.component/tablamultiplicar.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { TestComponent } from '../components/test.component/test.component';
     SumarNumeros,
     Prueba,
     Prueba2Component,
-    TestComponent
+    TestComponent,
+    TablamultiplicarComponent
   ],
   imports: [
     BrowserModule,

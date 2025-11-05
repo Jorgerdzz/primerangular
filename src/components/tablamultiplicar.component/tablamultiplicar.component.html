@@ -1,0 +1,26 @@
+<div>
+    <form #tablamultiplicarform="ngForm" (ngSubmit)="generarResultados()">
+        <label>Introduzca número:</label>
+        <input type="number" name="cajanum" #cajanum="ngModel" [(ngModel)]="numero"/>
+        <button >Generar tabla</button>
+    </form>
+    
+
+    <h1>TABLA MULTIPLICAR</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>OPERACIÓN</th>
+                <th>RESULTADO</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(resultado of resultados; track resultados; let i = $index){
+                <tr>
+                    <td>{{numero}} * {{i+1}}</td>
+                    <td>{{resultado}}</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
