@@ -1,0 +1,107 @@
+div {
+  padding: var(--spacing-2xl);
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+  animation: fadeIn 0.6s ease-out;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  color: var(--accent-color);
+  font-size: 2.5rem;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto var(--spacing-2xl) auto;
+  background: var(--bg-secondary);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+label {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: var(--font-size-lg);
+}
+
+input {
+  width: 100%;
+  padding: var(--spacing-md);
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-lg);
+  transition: all 0.3s ease;
+  margin-bottom: var(--spacing-lg);
+}
+
+input:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.1);
+}
+
+button {
+  width: 100%;
+  background: linear-gradient(135deg, var(--accent-color), var(--accent-dark));
+}
+
+button:hover {
+  background: linear-gradient(135deg, var(--accent-dark), var(--accent-color));
+}
+
+table {
+  max-width: 700px;
+  margin: 0 auto;
+  background: white;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+thead {
+  background: linear-gradient(135deg, var(--accent-color), var(--accent-dark));
+}
+
+th {
+  padding: var(--spacing-lg);
+  color: white;
+  font-weight: 700;
+  font-size: var(--font-size-lg);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+td {
+  padding: var(--spacing-md);
+  font-size: var(--font-size-base);
+  text-align: center;
+  font-weight: 500;
+}
+
+tbody tr {
+  transition: all 0.3s ease;
+  border-bottom: 1px solid var(--border-color);
+}
+
+tbody tr:hover {
+  background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
+  transform: scale(1.01);
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+tbody td:first-child {
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+tbody td:last-child {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: var(--font-size-lg);
+}

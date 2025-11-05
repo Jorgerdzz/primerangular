@@ -1,0 +1,77 @@
+div {
+  padding: var(--spacing-2xl);
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+  animation: fadeIn 0.6s ease-out;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+h3 {
+  color: #3b82f6 !important;
+  text-align: center;
+  padding: var(--spacing-lg);
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--spacing-xl);
+  box-shadow: var(--shadow-md);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto var(--spacing-xl) auto;
+}
+
+label {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: var(--font-size-lg);
+}
+
+input {
+  width: 100%;
+  padding: var(--spacing-md);
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-base);
+  transition: all 0.3s ease;
+  margin-bottom: var(--spacing-lg);
+}
+
+input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+button {
+  width: 100%;
+  margin-top: var(--spacing-md);
+}
+
+ul {
+  max-width: 600px;
+  margin: var(--spacing-xl) auto 0;
+  background: var(--bg-secondary);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+ul li {
+  font-size: var(--font-size-lg);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+  background: white;
+  border-left: 4px solid var(--accent-color);
+  font-weight: 500;
+}
+
+ul li:last-child {
+  margin-bottom: 0;
+}

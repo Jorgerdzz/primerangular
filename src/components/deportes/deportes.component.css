@@ -1,9 +1,78 @@
-.par{
-    background-color: blue;
-    color: white;
+div {
+  padding: var(--spacing-xl);
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+  animation: fadeIn 0.6s ease-out;
 }
 
-.impar{
-    background-color: red;
-    color: yellow;
+h1 {
+  color: var(--accent-color) !important;
+  text-shadow: 2px 2px 4px rgba(20, 184, 166, 0.3);
+  margin-bottom: var(--spacing-lg);
+}
+
+h2 {
+  color: var(--text-primary);
+  background: var(--bg-secondary);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  display: inline-block;
+  margin-bottom: var(--spacing-lg);
+}
+
+p {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  margin: var(--spacing-md) 0;
+}
+
+ul {
+  display: grid;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-lg);
+}
+
+li {
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-left-width: 5px;
+}
+
+.par {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  border-left-color: #1d4ed8;
+  box-shadow: var(--shadow-md);
+}
+
+.par:hover {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  transform: translateX(10px) scale(1.02);
+}
+
+.impar {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: #fef08a;
+  border-left-color: #991b1b;
+  box-shadow: var(--shadow-md);
+}
+
+.impar:hover {
+  background: linear-gradient(135deg, #dc2626, #991b1b);
+  transform: translateX(10px) scale(1.02);
+}
+
+ng-template p {
+  margin: var(--spacing-lg) 0;
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  text-align: center;
+  box-shadow: var(--shadow-md);
 }

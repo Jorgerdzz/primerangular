@@ -13,6 +13,8 @@ import { Prueba } from './components/prueba/prueba';
 import { Prueba2Component } from './components/prueba2.component/prueba2.component';
 import { TestComponent } from '../components/test.component/test.component';
 import { TablamultiplicarComponent } from '../components/tablamultiplicar.component/tablamultiplicar.component';
+import { MenuComponent } from '../components/menu.component/menu.component';
+import { appRoutingProvider, Routing } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -26,14 +28,17 @@ import { TablamultiplicarComponent } from '../components/tablamultiplicar.compon
     Prueba,
     Prueba2Component,
     TestComponent,
-    TablamultiplicarComponent
+    TablamultiplicarComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    Routing
   ],
   providers: [
-    provideBrowserGlobalErrorListeners()
+    provideBrowserGlobalErrorListeners(),
+    appRoutingProvider
   ],
   bootstrap: [App]
 })
